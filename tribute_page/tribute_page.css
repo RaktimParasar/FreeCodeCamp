@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+}
+#title{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+#img-caption{
+    margin: auto;
+    color: whitesmoke;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+#tribute-info{
+    width: 1300px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 100px 10px;
+    padding: 4px;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.19), 0px 6px 6px rgba(255, 255, 255, 0.23);
+}
+.info{
+    max-width: 850px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    font-weight: 200;
+    font-family: fantasy;
+    font-size: 18px;
+    
+}
+li{
+    margin: 16px 0;
+}
+blockquote{
+    margin: 100px 50px 50px 50px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}

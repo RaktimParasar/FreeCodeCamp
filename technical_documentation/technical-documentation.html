@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Teko|Zilla+Slab&display=swap" rel="stylesheet">  
+    <title>Technical Documentation</title>
+</head>
+<body>
+<nav id="navbar" class="sidenav">
+    <header id="header">Python Documentation</header>
+    <li class="nav-list"><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Characteristics_of_Python">Characteristics of Python</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Hello_World_using_Python">Hello World using Python</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Assigning_Values_to_Variables">Assigning Values to Variables</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Multiple_Assignment">Multiple Assignment</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Standard_Data_Types">Standard Data Types</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Python_Numbers">Python Numbers</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Python_String">Python String</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Python_List">Python List</a></li>
+    <li class="nav-list"><a class="nav-link" href="#Reference">Reference</a></li>
+</nav>
+
+<main id="main-doc" class="content">
+    <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.</p>
+        
+        <p>Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.</p>
+
+        <p>Python is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning Python:</p>
+
+        <ul>
+            <li class="doc-list"><strong>Python is Interpreted</strong>- Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.</li>
+            <li class="doc-list"><strong>Python is Interactive</strong>- You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.</li>
+            <li class="doc-list"><strong>Python is Object-Oriented</strong>-Python supports Object-Oriented style or technique of programming that encapsulates code within objects.</li>
+            <li class="doc-list"><strong>Python is a Beginner's Language</strong>-Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.</li>
+        </ul>
+    </section>
+    <section id="Characteristics_of_Python" class="main-section">
+        <header>Characteristics of Python</header>
+        <p>Following are important characteristics of Python Programming −</p>
+        <ul>
+            <li class="doc-list">It supports functional and structured programming methods as well as OOP.</li>
+            <li class="doc-list">It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+            <li class="doc-list">It provides very high-level dynamic data types and supports dynamic type checking.</li>
+            <li class="doc-list">It supports automatic garbage collection.</li>
+            <li class="doc-list">It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+        </ul>
+    </section>
+    <section id="Hello_World_using_Python" class="main-section">
+        <header>Hello World using Python</header>
+        <p>Just to give you a little excitement about Python, I'm going to give you a small conventional Python Hello World program, You can try this example.</p>
+        <code>
+            print ("Hello, Python!");
+        </code>
+    </section>
+    <section id="Assigning_Values_to_Variables" class="main-section">
+        <header>Assigning Values to Variables</header>
+        <p>Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.
+        The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −</p>
+        <code>
+            counter = 100          # An integer assignment
+            miles   = 1000.0       # A floating point
+            name    = "John"       # A string
+
+            print counter
+            print miles
+            print name
+        </code>
+        <p>Here, 100, 1000.0 and "John" are the values assigned to counter, miles, and name variables, respectively. This produces the following result −</p>
+        <code>
+            100
+            1000.0
+            John
+        </code>
+    </section>
+    <section id="Multiple_Assignment" class="main-section">
+        <header>Multiple Assignment</header>
+        <p>Python allows you to assign a single value to several variables simultaneously. For example −</p>
+        <code>
+            a = b = c = 1
+        </code>
+        <p>Here, an integer object is created with the value 1, and all three variables are assigned to the same memory location. You can also assign multiple objects to multiple variables. For example −</p>
+        <code>
+            a,b,c = 1,2,"john"
+        </code>
+        <p>Here, two integer objects with values 1 and 2 are assigned to variables a and b respectively, and one string object with the value "john" is assigned to the variable c.</p>
+    </section>
+    <section id="Standard_Data_Types" class="main-section">
+        <header>Standard Data Types</header>
+        <p>The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters. Python has various standard data types that are used to define the operations possible on them and the storage method for each of them.
+        Python has five standard data types −</p>
+        <ul>
+            <li class="doc-list">Numbers</li>
+            <li class="doc-list">String</li>
+            <li class="doc-list">Tuples</li>
+            <li class="doc-list">List</li>
+            <li class="doc-list">Dictionary</li>
+        </ul>
+    </section>
+    <section id="Python_Numbers" class="main-section">
+        <header>Python Numbers</header>
+        <p>Number data types store numeric values. Number objects are created when you assign a value to them. For example −</p>
+        <code>
+            var1 = 1
+            var2 = 10
+        </code>
+        <p>You can also delete the reference to a number object by using the del statement. The syntax of the del statement is −</p>
+        <code>
+            del var1[,var2[,var3[....,varN]]]]
+        </code>
+        <p>You can delete a single object or multiple objects by using the del statement. For example −</p>
+        <code>
+            del var
+            del var_a, var_b
+        </code>
+        <p>Python supports four different numerical types −</p>
+        <ul>
+            <li class="doc-list">int (signed integers)</li>
+            <li class="doc-list">long (long integers, they can also be represented in octal and hexadecimal)</li>
+            <li class="doc-list">float (floating point real values)</li>
+            <li class="doc-list">complex (complex numbers)</li>
+        </ul>
+    </section>
+    <section id="Python_String" class="main-section">
+        <header>Python String</header>
+        <p>Strings in Python are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end.</p>
+        <p>The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator. For example −</p>
+        <code>
+            str = 'Hello World!'
+
+            print str          # Prints complete string
+            print str[0]       # Prints first character of the string
+            print str[2:5]     # Prints characters starting from 3rd to 5th
+            print str[2:]      # Prints string starting from 3rd character
+            print str * 2      # Prints string two times
+            print str + "TEST" # Prints concatenated string
+        </code>
+        <p>This will produce the following result −</p>
+        <code>
+            Hello World!
+            H
+            llo
+            llo World!
+            Hello World!Hello World!
+            Hello World!TEST
+        </code>
+    </section>
+    <section id="Python_List" class="main-section">
+        <header>Python List</header>
+        <p>Lists are the most versatile of Python's compound data types. A list contains items separated by commas and enclosed within square brackets ([]). To some extent, lists are similar to arrays in C. One difference between them is that all the items belonging to a list can be of different data type.</p>
+        <p>The values stored in a list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator. For example −</p>
+        <code>
+            list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+            tinylist = [123, 'john']
+
+            print list          # Prints complete list
+            print list[0]       # Prints first element of the list
+            print list[1:3]     # Prints elements starting from 2nd till 3rd 
+            print list[2:]      # Prints elements starting from 3rd element
+            print tinylist * 2  # Prints list two times
+            print list + tinylist # Prints concatenated lists
+        </code>
+        <p>This produce the following result −</p>
+        <code>
+            ['abcd', 786, 2.23, 'john', 70.2]
+            abcd
+            [786, 2.23]
+            [2.23, 'john', 70.2]
+            [123, 'john', 123, 'john']
+            ['abcd', 786, 2.23, 'john', 70.2, 123, 'john']
+        </code>
+    </section>
+    <section id="Reference" class="main-section">
+        <header>Reference</header>
+        <ul>
+            <li class="doc-list">For more documentation go through <a href="https://www.tutorialspoint.com/python/index.htm"> Tutorialspoint</a>.</li>
+        </ul>
+    </section>
+</main>
+</div>
+
+</body>
+</html>

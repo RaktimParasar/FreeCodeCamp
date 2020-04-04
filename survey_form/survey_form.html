@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey_form.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Sofia" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="header">
+        <div>
+        <h1 id="title">Ice Cream Parlors Survey Form</h1>
+        <p id="description">Please leave your valuable feedback how did you enjoyed your ice-cream.</p>
+    </div>
+    </div>
+    <form id="survey-form">
+        <div>
+        <label id="name-label" for="name">Name
+        <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+        </div>
+        <div>
+        <label id="email-label" for="email">Email
+        <input type="email" name="" id="email" placeholder="Enter a valid email" required>
+        </label>
+        </div>
+        <div>
+        <label id="number-label" for="name">Rate ice-cream center on the scale of 1-10
+        <input type="number" name="" id="number" placeholder="Enter a number" min="1" max="10">
+        </label>
+        </div>
+        <div>
+        <label for="dropdown">Choose your fav flavour:
+            <select id="dropdown">
+            <option disabled selected value>Select flavour</option>
+            <option value="Choclate">Choclate</option>
+            <option value="Strawberry">Strawberry</option>
+            <option value="Mango">Mango</option>
+            </select>
+            </label> 
+        </div>
+        <div>
+            <p>Would you recommend ice-cream center to a friend?</p>
+            <label class="radio-checkbox" for="definitely">
+            <input
+                class="align-radio"
+                name="recommend"
+                value="definitely"
+                type="radio"
+                checked
+            />Definitely</label
+            >
+            <label class="radio-checkbox" for="maybe">
+            <input
+                class="align-radio"
+                name="recommend"
+                value="maybe"
+                type="radio"
+            />Maybe</label
+            >
+            <label class="radio-checkbox" for="nope">
+            <input
+                class="align-radio"
+                name="recommend"
+                value="nope"
+                type="radio"
+            />Nope</label
+            >
+        </div>
+        <div>
+            <p>Which new ice cream flavour would you like to try ?</p>
+            <label class="radio-checkbox" for="blackberry-ice-cream">
+            <input
+                class="align-check"
+                name="flavour"
+                value="blackberry-ice-cream"
+                type="checkbox"
+            />Blackberry Ice Cream </label
+            >
+            <label class="radio-checkbox" for="neapolitan">
+            <input
+                class="align-check"
+                name="flavour"
+                value="neapolitan"
+                type="checkbox"
+            />Neapolitan</label
+            >
+            <label class="radio-checkbox" for="moose-tracks">
+            <input
+                class="align-check"
+                name="flavour"
+                value="moose-tracks"
+                type="checkbox"
+            />Moose tracks</label
+            >
+            <label class="radio-checkbox" for="buttered-pecan">
+            <input
+                class="align-check"
+                name="flavour"
+                value="buttered-pecan"
+                type="checkbox"
+            />Buttered Pecan</label
+            >
+            <label class="radio-checkbox" for="cookies-&-cream">
+            <input
+                class="align-check"
+                name="flavour"
+                value="cookies-&-cream"
+                type="checkbox"
+            />Cookies & Cream</label
+            >
+            <label class="radio-checkbox" for="mint-chocolate-chip"> 
+            <input
+                class="align-check"
+                name="flavour"
+                value="mint-chocolate-chip"
+                type="checkbox"
+            />Mint Chocolate Chip</label
+            >
+            <label class="radio-checkbox" for="chocolate-chip-cookie-dough">
+            <input
+                class="align-check"
+                name="flavour"
+                value="chocolate-chip-cookie-dough"
+                type="checkbox"
+            />Chocolate Chip Cookie Dough</label
+            >
+        </div>
+        <div>
+            <p>Any feedback or suggestions are welcome ?</p>
+            <textarea name="f&s" id="feedback" placeholder="Please leave your comment here."></textarea>
+        </div>
+        <div>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>           
+</body>
+</html>

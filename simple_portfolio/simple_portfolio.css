@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Monda|Poly|Share+Tech&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #242524;
+    scroll-behavior: smooth;
+}
+
+li, a, button{
+    font-family: 'Monda', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 10px 100px #888888;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    transform: translateX(3px);
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#name{
+    font-family: 'Poly', serif;
+    font-size: 60px;
+    color: #0088a9;
+}
+#whoami{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    color: #edf0f1;
+}
+
+#name:hover {
+    color: #edf0f1;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#whoami:hover {
+    color: #0088a9;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+@media screen and (max-width: 568px){
+    #name{
+        font-size: 50px;
+    }
+    #whoami{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 435px){
+    #name{
+        font-size: 30px;
+    }
+}
+.text_1 {
+    animation: text1;
+}
+
+.text_2 {
+    animation: text2;
+}
+
+.text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 7s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+
+.text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes text2 {
+    0%, 50%, 100% {
+    width: 0;
+    }
+
+    60%, 90% {
+    width: 17.7em;
+    }
+}
+
+@keyframes text1 {
+    0%, 50%, 100% {
+    width: 0;
+    }
+    10%, 40% {
+    width: 14em;
+    }
+}
+
+@keyframes caret {
+    0%, 100% {
+    opacity: 0;
+    }
+    50% {
+    opacity: 1;
+    }
+}
+
+
+.logo { 
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    max-width: 100%;
+    transition: transform .2s;
+    }
+
+.logo:hover{
+    transform: scale(1.5);
+    cursor: grabbing;
+}
+
+.project-tile {
+    box-shadow: 0 4px 8px 0 #0088a9;
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-tile:hover {
+    box-shadow: 0 8px 16px 0 #0088a9;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+    height: 300px;
+}
+
+.container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+
+@font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.project_header {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin-bottom: 90px;
+}
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 9vw;
+  line-height: 9vw;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 5px 10px 20px red inset;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #125688;
+    color: white;
+}
+
+#social{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    color: white;
+}
